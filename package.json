@@ -1,0 +1,41 @@
+{
+  "name": "angular4-gcs-file-upload-nodejs",
+  "version": "1.0.0",
+  "description": "Project to upload files to google cloud storage with angular4 using nodeJs and express middleware as backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node ./bin/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lekens/angular4-file-upload-GCS.git"
+  },
+  "keywords": [
+    "Angular4",
+    "NodeJs",
+    "Google",
+    "Cloud",
+    "Storge",
+    "ExpressJs"
+  ],
+  "author": "Arokoyu Olalekan Ojo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lekens/angular4-file-upload-GCS/issues"
+  },
+  "homepage": "https://github.com/Lekens/angular4-file-upload-GCS#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^1.2.1",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "express": "~4.0.0",
+    "googleapis": "^21.3.0",
+    "morgan": "~1.0.0",
+    "multer": "^1.3.0",
+    "nconf": "^0.8.4",
+    "static-favicon": "~1.0.0"
+  }
+}
