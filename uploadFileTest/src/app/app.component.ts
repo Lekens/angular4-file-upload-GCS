@@ -3,7 +3,7 @@ import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
 import { Http, Response } from '@angular/http';
 import "rxjs/add/operator/do";
 import "rxjs/add/operator/map";
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://localhost:4000';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -24,11 +24,12 @@ export class AppComponent implements OnInit {
   constructor(private http: Http, private el: ElementRef) {  }
 
   uploadFile() {
-    let inputEl: HTMLInputElement = this.el.nativeElement.querySelector('#photo');
-    console.log("iam+ "+inputEl);
+    let inputEl: HTMLInputElement = this.el.nativeElement.querySelector('#file_name');
+    console.log("File Selected+ "+inputEl);
     let fileCount: number = inputEl.files.length;
     let formData = new FormData();
-    if (fileCount > 0) { // a file was selected
+    if (fileCount > 0) {
+      // a file was selected
       for (let i = 0; i < fileCount; i++) {
         formData.append('file_name', inputEl.files.item(i));
       }

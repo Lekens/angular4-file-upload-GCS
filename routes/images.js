@@ -3,10 +3,10 @@
  */
 const Storage = require('@google-cloud/storage');
 const Multer = require('multer');
-const CLOUD_BUCKET = 'maximus-163513.appspot.com'; // GCS bucket name
+const CLOUD_BUCKET = ''; // GCS bucket name
 var google = require('googleapis');
 const storage = Storage({
-    projectId: 'maximus-163513' // GCS project Id here
+    projectId: '' // GCS project Id here
 });
 const bucket = storage.bucket(CLOUD_BUCKET);
 

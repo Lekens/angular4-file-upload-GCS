@@ -14,12 +14,10 @@
   "keywords": [
     "Angular4",
     "NodeJs",
-    "Google",
-    "Cloud",
-    "Storge",
+    "Google Cloud Storge",
     "ExpressJs"
   ],
-  "author": "Arokoyu Olalekan Ojo",
+  "author": "Arokoyu Olalekan Ojo<arokoyuolalekan@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Lekens/angular4-file-upload-GCS/issues"

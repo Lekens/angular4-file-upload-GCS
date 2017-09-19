@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/', images.multer.single('photo'), images.sendUploadToGCS, function (req, res, next) {
+router.post('/', images.multer.single('file_name'), images.sendUploadToGCS, function (req, res, next) {
 
     let data = req.body;
     if (req.file && req.file.cloudStoragePublicUrl) {
